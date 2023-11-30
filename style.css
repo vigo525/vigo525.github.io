@@ -1,0 +1,295 @@
+/*Menu Home, Template, dan Layout Web*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+    background-image: url('image/pixel.gif');
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: sans-serif;
+  } 
+.content {
+  grid-area: content;
+}
+ 
+.sidebar {
+  grid-area: sidebar;
+  background: linear-gradient(
+    to right,
+    rgba(200, 107, 142, 1),
+    rgba(218, 105, 250, 1),
+    rgba(110, 125, 253, 1)
+  );
+  justify-content: center;
+}
+ 
+.footer {
+  grid-area: footer;
+  background: rgb(101, 35, 164);
+}
+ 
+.container {
+  font-size: 1.5em;
+  width: 100%;
+  height: 100;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 'sidebar' 'content' 'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px 800px 250px;
+}
+ 
+.content,
+.sidebar,
+.footer {
+  padding: 1em;
+}
+ 
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+ 
+nav li {
+  list-style: none;
+  padding: 1em 0;
+}
+ 
+nav li a {
+  color: white;
+  font-weight: 700;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+ 
+nav li a:hover {
+  opacity: 1;
+}
+ 
+.private {
+  max-width: 90 px;
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.private img {
+  width: 200px;
+}
+ 
+.private h1 {
+  font-size: 2em;
+  font-weight: 300;
+  color:white;
+}
+ 
+.private p {
+  font-weight: 300;
+  line-height: 1.3em;
+  color: white;
+}
+footer ul {
+  max-width: 640px;
+  margin: 2em auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+ 
+footer ul li {
+  list-style: none;
+  align-self: flex-end;
+}
+ 
+footer ul li a {
+  text-decoration: none;
+  color: #c1c6ce;
+}
+ 
+footer ul li img {
+  width: 30%;
+}
+ 
+footer p {
+  font-size: 0.8em;
+}
+@media (min-width: 1040px) {
+  .container {
+    grid-template-areas: 'sidebar content' 'sidebar footer';
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 300px 1f;
+  }
+ 
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+ 
+  .sidebar {
+    background: linear-gradient(
+      rgba(200, 107, 142, 1),
+      rgba(218, 105, 250, 1),
+      rgba(110, 125, 253, 1)
+    );
+    padding-top: 10em;
+  }
+ 
+  footer ul {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+  h2 {
+    color: white;
+  }
+  footer ul li a img {
+    width: 20%;
+  }
+/*Menu Skill*/
+}
+  h1{ 
+    font-family: sans-serif;
+  }
+  
+  li{ 
+    list-style-type: none;
+    font-family: sans-serif;
+  }
+.skills{ 
+	width: 500px;
+	margin: 60px auto;
+	color: #fff;
+}
+
+.skills li{ 
+	margin: 20px 0;
+}
+
+.bar{ 
+	background-color: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #fcfcfd;
+}
+
+.bar span{ 
+	height: 2px;
+	float: left;
+	background-color: #f8f8fb;
+}
+.html{ 
+	width: 75%;
+	animation: html 2s;
+}
+
+.css{ 
+	width: 75%;
+	animation: css 2s;
+}
+
+.javascript{ 
+	width: 50%;
+	animation: javascript 2s;
+}
+
+.C{ 
+	width: 65%;
+	animation: C 2s;
+}
+@keyframes html{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 75%;
+	}
+}
+
+@keyframes css{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 75%;
+	}
+}
+
+@keyframes javascript{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes C{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 65%;
+	}
+/*Menu Contact*/
+}
+#contact-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  margin-top: 20px;
+}
+#contact-form button {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ccc;
+  color: #000;
+  border: none;
+}
+/*Menu Service*/
+.service ul {
+  max-width: 700px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction:row;
+}
+ 
+.service ul li {
+  list-style: none;
+  align-self: flex-end;
+}
+ 
+.service ul li a {
+  text-decoration: none;
+  color: #c1c6ce;
+}
+.service ul li img {
+  width: 70%;
+}
+ 
+.service p {
+  font-size: 0.8 em;
+}
